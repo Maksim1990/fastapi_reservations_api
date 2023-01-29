@@ -1,13 +1,16 @@
-# Python FastApi CRUD API
-##### REST API App based on Python FastApi framework
+# FastApi Reservations API
+##### Reservations REST API App based on Python FastApi framework
 
-
-**HOT TO INSTALL APP**
+**HOT TO START APP**
 --
 
-* *Start app and build required Docker containers:*
+1. *Start app and build required Docker containers:*
 ``docker-compose up -d``
+1. *Exec into running container:*
+``docker exec -it res_api bash``
+1. *Start uvicorn dev server with reload option:*
+``uvicorn app.main:app --host 0.0.0.0 --port 80 --reload``
 
-App is available on ``5081`` port
+App is available on ``5082`` port
 --
-    http://127.0.0.1:5081
+    http://127.0.0.1:5082
